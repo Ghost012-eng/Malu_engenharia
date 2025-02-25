@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+
+    <header class="contact-header">
+        <h2 class="contact-logo"><span>M</span>alu-Engenharia.LDA</h2>
+        <nav class="contact-navigation">
+            <a href="index.html">Início</a>
+            <a href="sobre_nos.html">Sobre</a>
+            <a href="projectos.html">Projetos</a>
+            <a href="productos.html">Produtos</a>
+            <a href="fale_conosco.html">Contato</a>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <h2 class="contact-title">Entre em Contato</h2>
+        <p class="contact-description">Preencha o formulário abaixo para falar conosco. Retornaremos o mais rápido possível!</p>
+        
+        <form id="contactForm" action="https://formsubmit.co/kelvinmate51@gmail.com" method="POST">
+            <!-- Configurações do FormSubmit -->
+            <input type="hidden" name="_next" value="obrigado.html">
+            <input type="hidden" name="_subject" value="Novo contato pelo site">
+            <input type="hidden" name="_captcha" value="false">
+            
+            <div class="contact-input-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" name="nome" id="nome" placeholder="Seu Nome" required>
+            </div>
+
+            <div class="contact-input-group">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="exemplo@email.com" required>
+            </div>
+
+            <div class="contact-input-group">
+                <label for="telefone">Telefone</label>
+                <select id="codigo-pais" name="codigo-pais" class="contact-select">
+                    <option value="+258">🇲🇿 +258 (Moçambique)</option>
+                    <option value="+55">🇧🇷 +55 (Brasil)</option>
+                    <option value="+351">🇵🇹 +351 (Portugal)</option>
+                    <option value="+1">🇺🇸 +1 (EUA)</option>
+                    <option value="+44">🇬🇧 +44 (Reino Unido)</option>
+                </select>
+                <input type="tel" name="telefone" id="telefone" placeholder="Seu telefone" required>
+            </div>
+
+            <div class="contact-input-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" placeholder="Escreva sua mensagem aqui..." required></textarea>
+            </div>
+
+            <button type="submit" class="contact-button">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <script defer src="JS/script.js"></script>
+</body>
+</html>
